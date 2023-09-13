@@ -54,8 +54,7 @@ The customer side will display:
     - Food category in a restaurant
     - Food price
     - Food price in a restaurant
-    - Costliest food item in a restaurant.
-  
+    - Costliest food item in a restaurant.  
     But the customer cannot order food items from the search bar. The customer can only order food items from the menu of a restaurant.
 
 3. In order to order food items, the customer has to select a restaurant from the list of restaurants.
@@ -63,8 +62,7 @@ The customer side will display:
     - Restaurant name
     - Restaurant category
     - Restaurant rating
-    - Restaurant price range.
-  
+    - Restaurant price range.  
     Once the customer selects a restaurant, the customer can order food items from the menu of the restaurant.
 
 5. In the menu of a restaurant, the customer can order food items by selecting the food item and entering the quantity of the food item.
