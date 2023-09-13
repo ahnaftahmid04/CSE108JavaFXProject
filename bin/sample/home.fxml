@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <AnchorPane fx:id="mainDashboard" layoutX="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0">
+         <children>
+            <Button layoutY="11.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutY="49.0" text="Username:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="username" layoutX="1.0" layoutY="79.0" text="myUserName">
+               <font>
+                  <Font name="System Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutY="123.0" text="Category Wise of Restaurants">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="catWiseTable" layoutY="152.0" prefHeight="243.0" prefWidth="318.0">
+              <columns>
+                <TableColumn fx:id="catCol" prefWidth="155.99996662139893" text="Category" />
+                <TableColumn fx:id="resCol" prefWidth="164.00001525878906" text="Restaurants" />
+              </columns>
+            </TableView>
+            <Label layoutY="411.0" text="Total Food Items in Each Restaurant">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TableView fx:id="numFoodTable" layoutY="439.0" prefHeight="260.0" prefWidth="318.0">
+              <columns>
+                <TableColumn fx:id="resNameCol" prefWidth="227.19997882843018" text="Restaurants" />
+                <TableColumn fx:id="quantityCol" prefWidth="89.60005187988281" text="Quantity" />
+              </columns>
+            </TableView>
+            <Label layoutX="471.0" text="Order Food">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="454.0" layoutY="43.0" text="Select Restaurant">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="restaurantSearchOptions" layoutX="351.0" layoutY="88.0" prefHeight="26.0" prefWidth="370.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <ListView fx:id="searchResResults" layoutX="351.0" layoutY="194.0" prefHeight="504.0" prefWidth="370.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ListView>
+            <Label fx:id="oneSearchType" layoutX="351.0" layoutY="124.0" text="Search Criteria 1" />
+            <Label fx:id="twoSearchType" layoutX="616.0" layoutY="124.0" text="Search Criteria 2" />
+            <TextField fx:id="oneSearchRes" layoutX="351.0" layoutY="151.0" prefHeight="26.0" prefWidth="254.0" />
+            <TextField fx:id="twoSearchRes" layoutX="616.0" layoutY="151.0" prefHeight="26.0" prefWidth="66.0" />
+            <Button fx:id="submitButton" layoutX="686.0" layoutY="151.0" mnemonicParsing="false" onAction="#onSubmit" text="OK">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="862.0" text="Search Food Item">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="foodChoiceBox" layoutX="757.0" layoutY="46.0" prefHeight="26.0" prefWidth="411.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <Label fx:id="oneFoodType" layoutX="757.0" layoutY="84.0" text="Search Criteria 1" />
+            <TextField fx:id="oneFoodRes" layoutX="757.0" layoutY="111.0" prefHeight="26.0" prefWidth="202.0" />
+            <Label fx:id="twoFoodType" layoutX="977.0" layoutY="84.0" text="Search Criteria 2" />
+            <Button fx:id="foodSubmitButton" layoutX="1139.0" layoutY="110.0" mnemonicParsing="false" onAction="#onFoodSubmit" text="OK">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <TextField fx:id="twoFoodRes" layoutX="977.0" layoutY="111.0" prefHeight="26.0" prefWidth="154.0" />
+            <ListView fx:id="foodSearchResults" layoutX="759.0" layoutY="194.0" prefHeight="504.0" prefWidth="411.0" />
+            <Label fx:id="threeFoodType" layoutX="757.0" layoutY="142.0" text="Search Criteria 3" />
+            <TextField fx:id="threeFoodRes" layoutX="757.0" layoutY="164.0" prefHeight="26.0" prefWidth="202.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="orderDashboard" prefHeight="700.0" prefWidth="1200.0" visible="false">
+         <children>
+            <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#onGoBack" text="Back">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="14.0" layoutY="56.0" text="Restaurant Information">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="101.0" text="Name:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoResName" layoutX="129.0" layoutY="101.0" text="Label">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="139.0" text="Score:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoScore" layoutX="129.0" layoutY="139.0" text="Label">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="177.0" text="Price:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoPrice" layoutX="129.0" layoutY="177.0" text="Label">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="215.0" text="Zip Code:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="infoZipCode" layoutX="129.0" layoutY="215.0" text="Label">
+               <font>
+                  <Font name="System Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="13.0" layoutY="258.0" text="Categories:">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <ListView fx:id="infoCategories" layoutX="13.0" layoutY="298.0" prefHeight="186.0" prefWidth="278.0" />
+            <Label layoutX="427.0" layoutY="4.0" text="SELECT FOOD ITEMS">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="foodInResChoice" layoutX="343.0" layoutY="63.0" prefHeight="26.0" prefWidth="457.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ChoiceBox>
+            <Label fx:id="oneResFoodLabel" layoutX="343.0" layoutY="101.0" text="Label" />
+            <TextField fx:id="oneResFoodField" layoutX="343.0" layoutY="127.0" prefHeight="26.0" prefWidth="296.0" />
+            <Label fx:id="twoResFoodLabel" layoutX="656.0" layoutY="101.0" text="Label" />
+            <TextField fx:id="twoResFoodField" layoutX="656.0" layoutY="127.0" prefHeight="26.0" prefWidth="100.0" />
+            <Button fx:id="inResFoodSubmit" layoutX="764.0" layoutY="127.0" mnemonicParsing="false" onAction="#onResFoodSubmit" prefHeight="26.0" prefWidth="33.0" text="OK">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <ListView fx:id="customFoodList" layoutX="342.0" layoutY="169.0" prefHeight="532.0" prefWidth="458.0" />
+            <Label layoutX="936.0" layoutY="38.0" text="Your Order">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Button layoutX="943.0" layoutY="644.0" mnemonicParsing="false" onAction="#onConfirmOrder" text="Confirm Order">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="888.0" layoutY="602.0" text="Total Price:">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="totalPrice" layoutX="1025.0" layoutY="602.0" text="Label">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="orderTextArea" layoutX="831.0" layoutY="77.0" prefHeight="518.0" prefWidth="344.0" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
