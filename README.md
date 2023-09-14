@@ -21,7 +21,8 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 1. Add a new restaurant
 2. Add a new food item to the menu of a restaurant
 
-Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.
+Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.  
+The server is a console based application.
 
 ## Restaurant Side
 The restaurant side will display:
