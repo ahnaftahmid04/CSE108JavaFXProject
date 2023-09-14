@@ -23,6 +23,8 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 
 Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.  
 The server is a console based application.
+![image](https://github.com/ahnaftahmid04/CSE108JavaFXProject/assets/121716123/dfd8f515-dbd9-4f57-b589-2c3612571cdf)
+
 
 ## Restaurant Side
 The restaurant side will display:
