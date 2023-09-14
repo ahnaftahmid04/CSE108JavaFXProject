@@ -43,7 +43,7 @@ The restaurant side will display:
 4. The pending order count and the completed order count will be updated automatically.
 
 <p align = "center">
-    <img src="iimage-3.png" alt="Customer Image">
+    <img src="image-3.png" alt="Restaurant Image">
 </p>
 
 ## Customer Side
