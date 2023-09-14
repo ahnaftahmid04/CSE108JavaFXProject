@@ -21,8 +21,6 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 1. Add a new restaurant
 2. Add a new food item to the menu of a restaurant
 
-![Alt text](image.png)
-</br>
 
 Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.  
 The server is a console based application.  
