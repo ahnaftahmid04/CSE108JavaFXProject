@@ -21,7 +21,11 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 1. Add a new restaurant
 2. Add a new food item to the menu of a restaurant
 
-Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.
+![Alt text](image.png)
+</br>
+
+Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.  
+The server is a console based application.  
 
 ## Restaurant Side
 The restaurant side will display:
@@ -32,7 +36,7 @@ The restaurant side will display:
 5. The restaurant will be able to see the username of the customer who placed the order and the food items ordered by the customer along with the quantity of each food item.
 
 ### Activities of Restaurant Side:
-1. The restaurant can login using their unique restaurant ID and password provided by the admin.
+1. The restaurant can login using their unique restaurant ID and password provided by the admin. The credentials of teh restaurant are in 'restaurantAccounts.txt' in 'cravio' package.
 2. When a new order is received, the order will be automatically added to the pending orders list.
 3. When the restaurant accepts the order, the order will be moved to the completed orders list.
 4. The pending order count and the completed order count will be updated automatically.
@@ -54,7 +58,8 @@ The customer side will display:
     - Food category in a restaurant
     - Food price
     - Food price in a restaurant
-    - Costliest food item in a restaurant
+    - Costliest food item in a restaurant.
+        
     But the customer cannot order food items from the search bar. The customer can only order food items from the menu of a restaurant.
 
 3. In order to order food items, the customer has to select a restaurant from the list of restaurants.
@@ -62,7 +67,8 @@ The customer side will display:
     - Restaurant name
     - Restaurant category
     - Restaurant rating
-    - Restaurant price range
+    - Restaurant price range.
+        
     Once the customer selects a restaurant, the customer can order food items from the menu of the restaurant.
 
 5. In the menu of a restaurant, the customer can order food items by selecting the food item and entering the quantity of the food item.
