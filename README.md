@@ -20,6 +20,8 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 ### Activities of Server Side:
 1. Add a new restaurant
 2. Add a new food item to the menu of a restaurant
+
+  
 ![image](https://github.com/ahnaftahmid04/CSE108JavaFXProject/assets/121716123/2a0b3ab8-68dc-4103-94fc-d2c003afe2ee)  
 
 Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.  
