@@ -22,7 +22,7 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 2. Add a new food item to the menu of a restaurant
 
 <p align = "center">
-  <img src="image.png" alt="Image Description">
+  <img src="image.png" alt="Server Image">
 </p>
 
 Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.  
@@ -41,6 +41,10 @@ The restaurant side will display:
 2. When a new order is received, the order will be automatically added to the pending orders list.
 3. When the restaurant accepts the order, the order will be moved to the completed orders list.
 4. The pending order count and the completed order count will be updated automatically.
+
+<p align = "center">
+    <img src="iimage-3.png" alt="Customer Image">
+</p>
 
 ## Customer Side
 The customer side will display:
@@ -71,6 +75,9 @@ The customer side will display:
     - Restaurant price range.
         
     Once the customer selects a restaurant, the customer can order food items from the menu of the restaurant.
+    <p align = "center">
+        <img src="image-1.png" alt="Customer Image">
+    </p>
 
 5. In the menu of a restaurant, the customer can order food items by selecting the food item and entering the quantity of the food item.
 6. The customer can view the list of food items ordered by them in the cart.
@@ -79,6 +86,10 @@ The customer side will display:
 9. Once the customer is done ordering food items, the customer can place the order.
 10. Once the order is placed, the customer will be displayed a message saying that the order is placed successfully.
 11. The customer can only food items from one restaurant at a time.
+
+<p align = "center">
+    <img src="image-2.png" alt="Customer Image">
+</p>
 
 # Fun Fact
 If you want to run the app using 2 different devices, then you have to change the IP address in the 'Main.java' file in the 'sample' package to your system's IP address for the client system but not the server system. You can find your system's IP address by running the command `ipconfig` in the command prompt.
