@@ -22,7 +22,7 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 2. Add a new food item to the menu of a restaurant
 
 <p>
-  <img src="D:\JavaProject\image.png" alt="Image Description">
+  <img src="image.png" alt="Image Description">
 </p>
 
 <br>
