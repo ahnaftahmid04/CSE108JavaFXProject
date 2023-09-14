@@ -24,13 +24,7 @@ The server side is built using Java. It uses a TCP connection to communicate wit
 <p>
   <img src="image.png" alt="Image Description">
 </p>
-
 <br>
-
-### Text Heading
-
-This is the text that describes the image. You can provide more details and information about the image here.
-
 
 Addition of a new restaurant and a new food item will not be reflected in the client side until the client side is restarted.  
 The server is a console based application.  
